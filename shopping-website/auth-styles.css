@@ -1,0 +1,598 @@
+.split-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.login-right {
+    flex: 1;
+    overflow: hidden;
+}
+
+.login-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #000;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #5d7f6c;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-label {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Signup Button */
+.signup-btn {
+    background: linear-gradient(135deg, #20b2aa 0%, #48d1cc 100%);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    align-self: flex-start;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.signup-btn:hover {
+    background-color: #4a6657;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.divider span {
+    position: relative;
+    background-color: #fff;
+    padding: 0 15px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.google-btn {
+    color: #333;
+}
+
+.auth-link-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-link-bottom a {
+    color: #5d7f6c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Success Message */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    display: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Centered content layout */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Signup form wider container */
+.signup-form-container {
+    max-width: 700px;
+}
+
+/* Two-column grid for form fields */
+.form-grid-two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Link styling */
+.auth-link {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.auth-link a {
+    color: #20b2aa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Profile information grid */
+.profile-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile-field {
+    margin-bottom: 0;
+}
+
+.profile-label {
+    color: #20b2aa;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-value {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Address field - full width */
+.profile-address-section {
+    margin-top: 30px;
+}
+
+/* Account status box */
+.account-status-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.status-active {
+    color: #20b2aa;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.status-member-since {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+    
+    .login-right {
+        display: none;
+    }
+    
+    .form-grid-two-cols {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Additional styles for login, signup, and profile pages */
+
+/* Split Screen Layout for Login */
+.split-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.login-left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background-color: #ffffff;
+}
+
+.login-right {
+    flex: 1;
+    overflow: hidden;
+}
+
+.login-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-form-wrapper {
+    width: 100%;
+    max-width: 400px;
+}
+
+.signup-wider {
+    max-width: 500px;
+}
+
+.login-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #000;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="tel"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #5d7f6c;
+}
+
+/* Checkbox Group */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+}
+
+.checkbox-label {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    font-weight: 400;
+}
+
+/* Signup Button */
+.signup-btn {
+    width: 100%;
+    background-color: #5d7f6c;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.signup-btn:hover {
+    background-color: #4a6657;
+}
+
+/* Divider */
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background-color: #e0e0e0;
+}
+
+.divider span {
+    position: relative;
+    background-color: #fff;
+    padding: 0 15px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* Social Login Buttons */
+.social-login {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-btn {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s;
+}
+
+.social-btn:hover {
+    background-color: #f5f5f5;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.google-btn {
+    color: #333;
+}
+
+/* Bottom Auth Link */
+.auth-link-bottom {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 14px;
+    color: #666;
+}
+
+.auth-link-bottom a {
+    color: #5d7f6c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Success Message */
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    display: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Centered content layout */
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Signup form wider container */
+.signup-form-container {
+    max-width: 700px;
+}
+
+/* Two-column grid for form fields */
+.form-grid-two-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Link styling */
+.auth-link {
+    margin-top: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.auth-link a {
+    color: #20b2aa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+/* Profile information grid */
+.profile-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.profile-field {
+    margin-bottom: 0;
+}
+
+.profile-label {
+    color: #20b2aa;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.profile-value {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Address field - full width */
+.profile-address-section {
+    margin-top: 30px;
+}
+
+/* Account status box */
+.account-status-box {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.status-active {
+    color: #20b2aa;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.status-member-since {
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .split-container {
+        flex-direction: column;
+    }
+    
+    .login-right {
+        display: none;
+    }
+    
+    .form-grid-two-cols {
+        grid-template-columns: 1fr;
+    }
+}

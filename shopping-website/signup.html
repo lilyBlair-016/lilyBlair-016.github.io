@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - PetShop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <div class="split-container">
+        <div class="login-left">
+            <div class="login-form-wrapper signup-wider">
+                <h2 class="login-title">Create Your Account</h2>
+                
+                <form id="signupForm">
+                    <div class="form-grid-two-cols">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="(123) 456-7890" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Home Address</label>
+                        <textarea id="address" name="address" rows="3" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="6" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" minlength="6" required>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terms" name="terms">
+                        <label for="terms" class="checkbox-label">I agree to the terms & policy</label>
+                    </div>
+
+                    <button type="submit" class="signup-btn">Signup</button>
+                    
+                    <div class="success-message" id="successMessage">
+                        Account created successfully! Redirecting to login...
+                    </div>
+                </form>
+
+                <div class="divider">
+                    <span>Or</span>
+                </div>
+
+                <div class="social-login">
+                    <button class="social-btn google-btn" type="button">
+                        <img src="images/Google_Button.png" alt="Google">
+                        Sign up with Google
+                    </button>
+                </div>
+
+                <p class="auth-link-bottom">
+                    Have an account? 
+                    <a href="login.html">Sign In</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="login-right">
+            <img src="images/BarkAvenue_Logo.png" alt="Dog Photo">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

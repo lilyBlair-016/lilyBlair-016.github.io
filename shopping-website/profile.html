@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - PetShop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <div class="logo"><img src="images/Header_Logo.png"></div>
+                <h1>Bark Avenue</h1>
+            </div>
+            <div class="header-actions">
+                <a class="header-login" href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+                    <li><a href="profile.html" class="nav-link active">Profile</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="profile-container">
+        <!-- Profile Overview Section -->
+        <div class="profile-overview">
+            <div class="profile-picture-container">
+                <img src="images/Owner_Pic.jpg" alt="Profile Picture" class="profile-picture" id="profilePicture">
+            </div>
+            <div class="profile-name-email">
+                <h2 class="profile-name" id="profileName">Allysa Padilla</h2>
+            </div>
+            <button class="edit-button" id="editButton">Edit</button>
+        </div>
+
+        <!-- Personal Information Section -->
+        <div class="personal-info-section">
+            <div class="info-column left-column">
+                <div class="info-field">
+                    <label class="info-label">First Name</label>
+                    <p class="info-value" id="displayFirstName"></p>
+                </div>
+                <div class="info-field">
+                    <label class="info-label">Email</label>
+                    <p class="info-value" id="displayEmail"></p>
+                </div>
+                <div class="info-field">
+                    <label class="info-label">Mobile Number</label>
+                    <p class="info-value" id="displayMobile"></p>
+                </div>
+            </div>
+            <div class="info-column right-column">
+                <div class="info-field">
+                    <label class="info-label">Last Name</label>
+                    <p class="info-value" id="displayLastName"></p>
+                </div>
+                <div class="info-field">
+                    <label class="info-label">Password</label>
+                    <p class="info-value" id="displayPassword"></p>
+                </div>
+                <div class="info-field">
+                    <label class="info-label">Home Address</label>
+                    <p class="info-value" id="displayAddress"></p>
+                </div>
+            </div>
+        </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2026 Bark Avenue. All rights reserved.</p>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p>Email: info@barkavenue.com</p>
+                <p>Phone: +63 9873259807</p>
+                <p>Address: E. Rodriguez Avenue, Makati City, Philippines</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
