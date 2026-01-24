@@ -94,38 +94,43 @@ if (loginForm) {
 
 /* Profile */
 document.addEventListener("DOMContentLoaded", () => {
-  const saved = localStorage.getItem("userData");
+  const notLoggedIn = document.getElementById("notLoggedIn");
+  const profileInfo = document.getElementById("profileInfo");
 
+  if (!notLoggedIn || !profileInfo) return;
+
+  const isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+
+  if (!isLoggedIn) {
+    notLoggedIn.style.display = "block";
+    profileInfo.style.display = "none";
+    return;
+  }
+
+  notLoggedIn.style.display = "none";
+  profileInfo.style.display = "block";
+
+  const saved = localStorage.getItem("userData");
   if (!saved) {
-    console.warn("No userData found in localStorage. Signup first.");
+    console.warn("Logged in but no userData found in localStorage.");
     return;
   }
 
   const user = JSON.parse(saved);
 
-  const firstNameEl = document.getElementById("displayFirstName");
-  const lastNameEl = document.getElementById("displayLastName");
-  const emailEl = document.getElementById("displayEmail");
-  const mobileEl = document.getElementById("displayMobile");
-  const addressEl = document.getElementById("displayAddress");
-  const passwordEl = document.getElementById("displayPassword");
+  document.getElementById("displayFirstName").textContent = user.firstName || "—";
+  document.getElementById("displayLastName").textContent = user.lastName || "—";
+  document.getElementById("displayEmail").textContent = user.email || "—";
+  document.getElementById("displayMobile").textContent = user.mobile || "—";
+  document.getElementById("displayAddress").textContent = user.address || "—";
 
-  if (firstNameEl) firstNameEl.textContent = user.firstName || "—";
-  if (lastNameEl) lastNameEl.textContent = user.lastName || "—";
-  if (emailEl) emailEl.textContent = user.email || "—";
-  if (mobileEl) mobileEl.textContent = user.mobile || "—";
-  if (addressEl) addressEl.textContent = user.address || "—";
-
-  if (passwordEl) {
-    const pw = user.password || "";
-    passwordEl.textContent = pw ? "•".repeat(Math.min(pw.length, 12)) : "—";
-  }
+  const pw = user.password || "";
+  document.getElementById("displayPassword").textContent =
+    pw ? "•".repeat(Math.min(pw.length, 12)) : "—";
 
   const profileName = document.getElementById("profileName");
-  const profileEmail = document.getElementById("profileEmail");
-
-  const fullName = `${user.firstName || ""} ${user.lastName || ""}`.trim();
-
-  if (profileName) profileName.textContent = fullName || "Guest User";
-  if (profileEmail) profileEmail.textContent = user.email || "guest@example.com";
+  if (profileName) {
+    const fullName = `${user.firstName || ""} ${user.lastName || ""}`.trim();
+    profileName.textContent = fullName || "Guest User";
+  }
 });
