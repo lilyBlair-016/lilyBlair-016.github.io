@@ -485,3 +485,146 @@ footer {
         font-size: 28px;
     }
 }
+
+/*shopping-cart*/
+
+.cart-items {
+padding: 30px;
+}
+
+.cart-item {
+display: flex;
+align-items: center;
+padding: 20px;
+border-bottom: 2px solid #fffacd;
+gap: 20px;
+}
+
+.cart-item:last-child {
+border-bottom: none;
+}
+
+.item-image {
+width: 100px;
+height: 100px;
+background-color: #fffacd;
+border-radius: 8px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 40px;
+}
+
+.item-details {
+flex: 1;
+}
+
+.item-name {
+font-size: 18px;
+font-weight: 600;
+color: #20b2aa;
+margin-bottom: 5px;
+}
+
+.item-description {
+color: #666;
+font-size: 14px;
+}
+
+.item-price {
+font-size: 20px;
+font-weight: bold;
+color: #333;
+margin: 0 20px;
+}
+
+.quantity-controls {
+display: flex;
+align-items: center;
+gap: 10px;
+}
+
+.quantity-controls button {
+background-color: #20b2aa;
+color: white;
+border: none;
+width: 30px;
+height: 30px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 18px;
+transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover {
+background-color: #1a9790;
+}
+
+.quantity-controls span {
+min-width: 30px;
+text-align: center;
+font-weight: 600;
+}
+
+.remove-btn {
+background-color: #ff6b6b;
+color: white;
+border: none;
+padding: 8px 15px;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+background-color: #ee5555;
+}
+
+.cart-summary {
+background-color: #fffacd;
+padding: 30px;
+border-top: 3px solid #20b2aa;
+}
+
+.summary-row {
+display: flex;
+justify-content: space-between;
+margin-bottom: 15px;
+font-size: 16px;
+}
+
+.summary-row.total {
+font-size: 24px;
+font-weight: bold;
+color: #20b2aa;
+padding-top: 15px;
+border-top: 2px solid #20b2aa;
+}
+
+.checkout-btn {
+width: 100%;
+background-color: #20b2aa;
+color: white;
+border: none;
+padding: 15px;
+font-size: 18px;
+font-weight: 600;
+border-radius: 8px;
+cursor: pointer;
+margin-top: 20px;
+transition: background-color 0.3s;
+}
+
+.checkout-btn:hover {
+background-color: #1a9790;
+}
+
+.empty-cart {
+text-align: center;
+padding: 60px 30px;
+color: #999;
+}
+
+.empty-cart h2 {
+margin-bottom: 10px;
+}
