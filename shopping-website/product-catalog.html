@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bark Avenue - Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <div class="logo"><img src="images/Header_Logo.png"></div>
+                <h1>Bark Avenue</h1>
+            </div>
+            <div class="header-actions">
+                <a class="header-login" href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            <img src="images/home-nav.png" alt="Home" class="icon">
+                            <span class="label">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            <img src="images/about-nav.png" alt="About Us" class="icon">
+                            <span class="label">About Us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-link">
+                            <img src="images/contact-nav.png" alt="Contact Us" class="icon">
+                            <span class="label">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html" class="nav-link">
+                            <img src="images/profile-nav.png" alt="Profile" class="icon">
+                            <span class="label">Profile</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="product-catalog.html" class="nav-link active">
+                            <img src="images/product-catalog-nav.png" alt="Product Catalog" class="icon">
+                            <span class="label">Products</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shopping-cart.html" class="nav-link">
+                            <img src="images/shopping-cart-nav.png" alt="Shopping Cart" class="icon">
+                            <span class="label">Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="catalog-header">
+                <h2>Pet Products Catalog</h2>
+                <div class="catalog-controls">
+                    <input type="text" class="search-box" placeholder="Search products...">
+                    <select class="filter-select">
+                        <option>All Categories</option>
+                        <option>Dog Products</option>
+                        <option>Cat Products</option>
+                        <option>Food & Treats</option>
+                        <option>Toys</option>
+                        <option>Accessories</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="products-info">
+                <span class="product-count">24 products</span>
+                <div class="sort-by">
+                    <span>Sort by:</span>
+                    <select class="filter-select">
+                        <option>Highest Price</option>
+                        <option>Lowest Price</option>
+                        <option>Most Popular</option>
+                        <option>Newest</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-product-id="DG1001" data-product-name="Premium Dog Food 25kg" data-product-price="999" data-product-description="Nutritious blend for healthy dogs">
+                    <button class="favorite-btn">♡</button>
+                    <div class="product-image"></div>
+                    <div class="product-code">code: DG1001</div>
+                    <div class="product-name">Premium Dog Food 25kg</div>
+                    <div class="product-description">Nutritious blend for healthy dogs</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(89 reviews)</span>
+                    </div>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background-color: #8B4513;"></span>
+                        <span class="color-dot" style="background-color: #D2691E;"></span>
+                    </div>
+                    <div class="product-footer">
+                        <div>
+                            <span class="old-price">₱1,299</span>
+                            <span class="product-price">₱999</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="DG1001">+</button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-product-id="CT2001" data-product-name="Cat Scratching Post" data-product-price="799" data-product-description="Durable sisal rope design">
+                    <button class="favorite-btn">♡</button>
+                    <div class="product-image"></div>
+                    <div class="product-code">code: CT2001</div>
+                    <div class="product-name">Cat Scratching Post</div>
+                    <div class="product-description">Durable sisal rope design</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(156 reviews)</span>
+                    </div>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background-color: #CD853F;"></span>
+                        <span class="color-dot" style="background-color: #A0522D;"></span>
+                        <span class="color-dot" style="background-color: #696969;"></span>
+                    </div>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">₱799</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="CT2001">+</button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-product-id="TY3001" data-product-name="Interactive Ball Launcher" data-product-price="2499" data-product-description="Automatic fetch machine">
+                    <button class="favorite-btn">♡</button>
+                    <div class="product-image"></div>
+                    <div class="product-code">code: TY3001</div>
+                    <div class="product-name">Interactive Ball Launcher</div>
+                    <div class="product-description">Automatic fetch machine</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(234 reviews)</span>
+                    </div>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background-color: #FF6347;"></span>
+                        <span class="color-dot" style="background-color: #4169E1;"></span>
+                    </div>
+                    <div class="product-footer">
+                        <div>
+                            <span class="old-price">₱2,999</span>
+                            <span class="product-price">₱2,499</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="TY3001">+</button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-product-id="AP4001" data-product-name="Pupfer Jacket" data-product-price="599" data-product-description="Comfortable winter wear">
+                    <button class="favorite-btn">♡</button>
+                    <div class="product-image"></div>
+                    <div class="product-code">code: AP4001</div>
+                    <div class="product-name">Pupfer Jacket</div>
+                    <div class="product-description">Comfortable winter wear</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(78 reviews)</span>
+                    </div>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background-color: #FF1493;"></span>
+                        <span class="color-dot" style="background-color: #1E90FF;"></span>
+                        <span class="color-dot" style="background-color: #32CD32;"></span>
+                    </div>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">₱599</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="AP4001">+</button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-product-id="FD5001" data-product-name="Gourmet Treats Pack" data-product-price="299" data-product-description="Assorted flavors for training">
+                    <button class="favorite-btn">♡</button>
+                    <div class="product-image"></div>
+                    <div class="product-code">code: FD5001</div>
+                    <div class="product-name">Gourmet Treats Pack</div>
+                    <div class="product-description">Assorted flavors for training</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="review-count">(312 reviews)</span>
+                    </div>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background-color: #FFD700;"></span>
+                        <span class="color-dot" style="background-color: #FF8C00;"></span>
+                    </div>
+                    <div class="product-footer">
+                        <div>
+                            <span class="old-price">₱399</span>
+                            <span class="product-price">₱299</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="FD5001">+</button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-product-id="CT6001" data-product-name="Cat Toy Set" data-product-price="350" data-product-description="Endless Playtime">
+                    <button class="favorite-btn">♡</button>
+                    <div class="product-image"></div>
+                    <div class="product-code">code: CT6001</div>
+                    <div class="product-name">Cat Toy Set</div>
+                    <div class="product-description">Endless Playtime</div>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="review-count">(145 reviews)</span>
+                    </div>
+                    <div class="product-colors">
+                        <span class="color-dot" style="background-color: #FF69B4;"></span>
+                        <span class="color-dot" style="background-color: #00CED1;"></span>
+                    </div>
+                    <div class="product-footer">
+                        <div>
+                            <span class="product-price">₱350</span>
+                        </div>
+                        <button class="add-to-cart-btn" data-product-id="CT6001">+</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2026 Bark Avenue. All rights reserved.</p>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p>Email: info@barkavenue.com</p>
+                <p>Phone: +63 9873259807</p>
+                <p>Address: E. Rodriguez Avenue, Makati City, Philippines</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

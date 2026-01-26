@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Payment & Delivery - Bark Avenue</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <div class="logo"><img src="images/Header_Logo.png"></div>
+                <h1>Bark Avenue</h1>
+            </div>
+            <div class="header-actions">
+                <a class="header-login" href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            <img src="images/home-nav.png" alt="Home" class="icon">
+                            <span class="label">Home</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            <img src="images/about-nav.png" alt="About Us" class="icon">
+                            <span class="label">About Us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-link">
+                            <img src="images/contact-nav.png" alt="Contact Us" class="icon">
+                            <span class="label">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html" class="nav-link">
+                            <img src="images/profile-nav.png" alt="Profile" class="icon">
+                            <span class="label">Profile</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="product-catalog.html" class="nav-link">
+                            <img src="images/product-catalog-nav.png" alt="Product Catalog" class="icon">
+                            <span class="label">Products</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shopping-cart.html" class="nav-link active">
+                            <img src="images/shopping-cart-nav.png" alt="Shopping Cart" class="icon">
+                            <span class="label">Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+
+            <div class="checkout-container">
+                <h1 class="page-title">Payment & Delivery</h1>
+
+                <!-- Payment Method Section -->
+                <div class="section">
+                    <h2 class="section-title">Select Payment Method</h2>
+
+                    <div class="option-group">
+                        <label class="option-card">
+                            <input type="radio" name="payment" value="credit-card" checked>
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">Credit/Debit Card</div>
+                                    <div class="option-description">Visa, Mastercard, American Express</div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="payment" value="gcash">
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">GCash</div>
+                                    <div class="option-description">Pay using your GCash wallet</div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="payment" value="paymaya">
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">PayMaya</div>
+                                    <div class="option-description">Pay using your PayMaya account</div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="payment" value="cod">
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">Cash on Delivery</div>
+                                    <div class="option-description">Pay when you receive your order</div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Delivery Option Section -->
+                <div class="section">
+                    <h2 class="section-title">Choose Delivery Option</h2>
+
+                    <div class="option-group">
+                        <label class="option-card">
+                            <input type="radio" name="delivery" value="standard" checked>
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">Standard Delivery</div>
+                                    <div class="option-description">3-5 business days • ₱50.00</div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="delivery" value="express">
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">Express Delivery</div>
+                                    <div class="option-description">1-2 business days • ₱150.00</div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="delivery" value="same-day">
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">Same-Day Delivery</div>
+                                    <div class="option-description">Within Metro Manila only • ₱250.00</div>
+                                </div>
+                            </div>
+                        </label>
+
+                        <label class="option-card">
+                            <input type="radio" name="delivery" value="pickup">
+                            <div class="option-content">
+                                <div class="option-icon"></div>
+                                <div class="option-details">
+                                    <div class="option-name">Store Pickup</div>
+                                    <div class="option-description">Pick up from our store • FREE</div>
+                                </div>
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary-box">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="order-subtotal">₱0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax (12%):</span>
+                        <span id="order-tax">₱0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Delivery Fee:</span>
+                        <span id="delivery-fee">₱50.00</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total-amount">₱0.00</span>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="button-group">
+                    <a href="shopping-cart.html" class="btn btn-secondary">Back to Cart</a>
+                    <button class="btn btn-primary" id="place-order-btn">Place Order</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2026 Bark Avenue. All rights reserved.</p>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p>Email: info@barkavenue.com</p>
+                <p>Phone: +63 9873259807</p>
+                <p>Address: E. Rodriguez Avenue, Makati City, Philippines</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

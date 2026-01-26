@@ -5,7 +5,7 @@
 <head>
     <title>Shopping Cart</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="scripts.js" defer></script>
+    <script src="script.js" defer></script>
 
 
 </head>
@@ -23,78 +23,140 @@
         </div>
     </header>
 
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html" class="nav-link">
+                            <img src="images/home-nav.png" alt="Home" class="icon">
+                            <span class="label">Home</span>
+                        </a>
+                    </li>
 
-    <main>
-        <section id="cart-items">
-            <div class="cart-item">
-                <div class="item-image"></div>
-                <div class="item-details">
-                    <div class="item-name">Dog Food
+                    <li>
+                        <a href="about.html" class="nav-link">
+                            <img src="images/about-nav.png" alt="About Us" class="icon">
+                            <span class="label">About Us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html" class="nav-link">
+                            <img src="images/contact-nav.png" alt="Contact Us" class="icon">
+                            <span class="label">Contact Us</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html" class="nav-link">
+                            <img src="images/profile-nav.png" alt="Profile" class="icon">
+                            <span class="label">Profile</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="product-catalog.html" class="nav-link">
+                            <img src="images/product-catalog-nav.png" alt="Product Catalog" class="icon">
+                            <span class="label">Products</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="shopping-cart.html" class="nav-link active">
+                            <img src="images/shopping-cart-nav.png" alt="Shopping Cart" class="icon">
+                            <span class="label">Cart</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <section id="cart-items">
+
+                <div class="cart-item" data-price="89.99">
+                    <div class="item-image"></div>
+
+                    <div class="item-details">
+                        <div class="item-name">Dog Food</div>
                         <div class="item-description">Premium Healthy Food</div>
                     </div>
-                    <div class="item-price">$89.99</div>
+
+                    <div class="item-price">Php 89.99</div>
+
                     <div class="quantity-controls">
-                        <button>−</button>
-                        <span>1</span>
-                        <button>+</button>
+                        <button class="decrease-btn">−</button>
+                        <span class="quantity">1</span>
+                        <button class="increase-btn">+</button>
                     </div>
+
                     <button class="remove-btn">Remove</button>
                 </div>
-            </div>
 
-                <div class="cart-item">
-                    <div class="item-image">👕</div>
+                <div class="cart-item" data-price="500">
+                    <div class="item-image"></div>
+
                     <div class="item-details">
-                        <div class="item-name">Cotton T-Shirt</div>
-                        <div class="item-description">Comfortable everyday wear</div>
+                        <div class="item-name">Pupfer Jacker</div>
+                        <div class="item-description">Comfortable winter wear</div>
                     </div>
-                    <div class="item-price">$24.99</div>
+
+                    <div class="item-price">Php 500</div>
+
                     <div class="quantity-controls">
-                        <button>−</button>
-                        <span>2</span>
-                        <button>+</button>
+                        <button class="decrease-btn">−</button>
+                        <span class="quantity">2</span>
+                        <button class="increase-btn">+</button>
                     </div>
+
                     <button class="remove-btn">Remove</button>
                 </div>
 
-                <div class="cart-item">
-                    <div class="item-image">🎒</div>
+                <div class="cart-item" data-price="350">
+                    <div class="item-image"></div>
+
                     <div class="item-details">
-                        <div class="item-name">Backpack</div>
-                        <div class="item-description">Durable travel companion</div>
+                        <div class="item-name">Cat Toy</div>
+                        <div class="item-description">Endless Playtime</div>
                     </div>
-                    <div class="item-price">$49.99</div>
+
+                    <div class="item-price">Php 350</div>
+
                     <div class="quantity-controls">
-                        <button>−</button>
-                        <span>1</span>
-                        <button>+</button>
+                        <button class="decrease-btn">−</button>
+                        <span class="quantity">1</span>
+                        <button class="increase-btn">+</button>
                     </div>
+
                     <button class="remove-btn">Remove</button>
                 </div>
-            </div>
 
-            <div class="cart-summary">
-                <div class="summary-row">
-                    <span>Subtotal:</span>
-                    <span id="subtotal">$189.96</span>
+                <div class="cart-summary">
+                    <div class="summary-row">
+                        <span>Subtotal:</span>
+                        <span id="subtotal">Php 0</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span id="shipping">Php 50</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Tax:</span>
+                        <span id="tax">Php 0</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Total:</span>
+                        <span id="total">Php 0</span>
+                    </div>
+                    <button class="checkout-btn">Proceed to Checkout</button>
                 </div>
-                <div class="summary-row">
-                    <span>Shipping:</span>
-                    <span>$10.00</span>
-                </div>
-                <div class="summary-row">
-                    <span>Tax:</span>
-                    <span id="tax">$15.20</span>
-                </div>
-                <div class="summary-row total">
-                    <span>Total:</span>
-                    <span id="total">$215.16</span>
-                </div>
-                <button class="checkout-btn">Proceed to Checkout</button>
-            </div>
-        </section>
 
-    </main>
+            </section>
+        </main>
+    </div>
+
+
 
     <footer>
         <div class="footer-content">
