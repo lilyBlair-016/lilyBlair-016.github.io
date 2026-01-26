@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-left">
+                <div class="logo"><img src="images/Header_Logo.png"></div>
+                <h1>Bark Avenue</h1>
+            </div>
+            <div class="header-actions">
+                <a class="header-login" href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="cart-items">
+            <div class="cart-item">
+                <div class="item-image"></div>
+                <div class="item-details">
+                    <div class="item-name">Dog Food
+                        <div class="item-description">Premium Healthy Food</div>
+                    </div>
+                    <div class="item-price">$89.99</div>
+                    <div class="quantity-controls">
+                        <button>−</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+
+                <div class="cart-item">
+                    <div class="item-image">👕</div>
+                    <div class="item-details">
+                        <div class="item-name">Cotton T-Shirt</div>
+                        <div class="item-description">Comfortable everyday wear</div>
+                    </div>
+                    <div class="item-price">$24.99</div>
+                    <div class="quantity-controls">
+                        <button>−</button>
+                        <span>2</span>
+                        <button>+</button>
+                    </div>
+                    <button class="remove-btn">Remove</button>
+                </div>
+
+                <div class="cart-item">
+                    <div class="item-image">🎒</div>
+                    <div class="item-details">
+                        <div class="item-name">Backpack</div>
+                        <div class="item-description">Durable travel companion</div>
+                    </div>
+                    <div class="item-price">$49.99</div>
+                    <div class="quantity-controls">
+                        <button>−</button>
+                        <span>1</span>
+                        <button>+</button>
+                    </div>
+                    <button class="remove-btn">Remove</button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$189.96</span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span>$10.00</span>
+                </div>
+                <div class="summary-row">
+                    <span>Tax:</span>
+                    <span id="tax">$15.20</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total:</span>
+                    <span id="total">$215.16</span>
+                </div>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <p>&copy; 2026 Bark Avenue. All rights reserved.</p>
+            </div>
+            <div class="contact-info">
+                <h4>Contact Information</h4>
+                <p>Email: info@barkavenue.com</p>
+                <p>Phone: +63 9873259807</p>
+                <p>Address: E. Rodriguez Avenue, Makati City, Philippines</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
