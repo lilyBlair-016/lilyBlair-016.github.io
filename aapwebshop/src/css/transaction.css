@@ -1,0 +1,217 @@
+.receipt-container {
+  background-color: white;
+  width: 100%;
+  max-width: 500px;
+  padding: 50px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+
+/* Receipt Header */
+.receipt-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.receipt-logo {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ddd;
+}
+
+.receipt-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.receipt-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #20b2aa;
+  margin-bottom: 5px;
+}
+
+.receipt-subtitle {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Receipt Divider */
+.receipt-divider {
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 25px 0;
+}
+
+/* Order Info */
+.order-info {
+  margin-bottom: 20px;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.info-row .info-label {
+  color: #666;
+}
+
+.info-row .info-value {
+  color: #333;
+  font-weight: 600;
+  padding: 0;
+  border: none;
+  background: none;
+  min-height: auto;
+  width: auto;
+}
+
+/* Order Items */
+.order-items {
+  margin-bottom: 20px;
+}
+
+.item-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.receipt-item-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.receipt-item-name {
+  font-size: 14px;
+  font-weight: 700;
+  color: #20b2aa;
+}
+
+.receipt-item-description {
+  font-size: 11px;
+  color: #888;
+}
+
+.item-qty {
+  font-size: 13px;
+  color: #666;
+}
+
+.receipt-item-price {
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+  text-align: right;
+}
+
+/* Order Summary */
+.order-summary {
+  margin-top: 20px;
+}
+
+.order-summary .summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #666;
+}
+
+.order-summary .summary-row span:last-child {
+  font-weight: 600;
+  color: #333;
+}
+
+.order-summary .total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 2px solid #20b2aa;
+  font-size: 16px;
+  font-weight: 700;
+  color: #20b2aa;
+}
+
+.order-summary .total-row span {
+  color: #20b2aa;
+}
+
+/* Receipt Actions */
+.receipt-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.action-btn {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #20b2aa;
+  color: white;
+}
+
+.action-btn:hover {
+  background-color: #1a8f88;
+}
+
+/* Receipt Footer */
+.receipt-footer {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.receipt-footer p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.footer-small {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Continue Shopping */
+.continue-shopping {
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 500px;
+}
+
+.continue-btn {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #20b2aa;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+.continue-btn:hover {
+  background-color: #1a8f88;
+}

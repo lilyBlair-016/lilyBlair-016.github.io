@@ -1,0 +1,50 @@
+.about-section {
+  background: white;
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+}
+
+.about-section h2 {
+  color: #20b2aa;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.about-section p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.owner-profile {
+  background: linear-gradient(135deg, #fffacd 0%, #ffd700 100%);
+  border-radius: 12px;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.owner-profile h3 {
+  color: #20b2aa;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.owner-name {
+  color: #20b2aa;
+  font-size: 20px;
+}
+
+.owner-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 15px 0 20px 0;
+  border: 3px solid #20b2aa;
+}
