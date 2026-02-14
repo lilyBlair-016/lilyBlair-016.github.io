@@ -25,7 +25,7 @@ export default function AboutPage() {
       <div className="owner-profile">
         <h3>Meet the Owner</h3>
         <img
-          src="/images/Owner_Pic.jpg"
+          src={`${import.meta.env.BASE_URL}images/Owner_Pic.jpg`}
           alt="Allysa Padilla"
           className="owner-image"
         />

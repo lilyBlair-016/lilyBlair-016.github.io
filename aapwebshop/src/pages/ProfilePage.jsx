@@ -30,7 +30,7 @@ export default function ProfilePage() {
         <div className="profile-overview">
           <div className="profile-picture-container">
             <img
-              src="/images/Owner_Pic.jpg"
+              src={`${import.meta.env.BASE_URL}images/Owner_Pic.jpg`}
               alt={fullName}
               className="profile-picture"
             />

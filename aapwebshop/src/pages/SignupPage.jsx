@@ -189,7 +189,7 @@ export default function SignupPage() {
 
           <div className="social-login">
             <button type="button" className="social-btn google-btn">
-              <img src="/images/Google_Button.png" alt="Google" />
+              <img src={`${import.meta.env.BASE_URL}images/Google_Button.png`} alt="Google" />
               Sign up with Google
             </button>
           </div>
@@ -201,7 +201,7 @@ export default function SignupPage() {
         </div>
       </div>
       <div className="login-right">
-        <img src="/images/BarkAvenue_Logo.png" alt="Bark Avenue" />
+        <img src={`${import.meta.env.BASE_URL}images/BarkAvenue_Logo.png`} alt="Bark Avenue" />
       </div>
     </div>
   );

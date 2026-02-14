@@ -37,7 +37,7 @@ export default function TransactionPage() {
       <div className="receipt-container">
         <div className="receipt-header">
           <div className="receipt-logo">
-            <img src="/images/Header_Logo.png" alt="Bark Avenue" />
+            <img src={`${import.meta.env.BASE_URL}images/Header_Logo.png`} alt="Bark Avenue" />
           </div>
           <div className="receipt-title">BARK AVENUE</div>
           <div className="receipt-subtitle">ONLINE ORDER RECEIPT</div>

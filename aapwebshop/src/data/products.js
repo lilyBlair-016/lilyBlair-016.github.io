@@ -9,7 +9,7 @@ export const products = [
     reviewCount: 89,
     colors: ['#8B4513', '#D2691E'],
     category: 'food',
-    image: '/images/premium-dog-food.jpg',
+    image: `${import.meta.env.BASE_URL}images/premium-dog-food.jpg`,
   },
   {
     id: 'CT2001',
@@ -21,7 +21,7 @@ export const products = [
     reviewCount: 156,
     colors: ['#CD853F', '#A0522D', '#696969'],
     category: 'accessories',
-    image: '/images/cat-scratching-post.jpg',
+    image: `${import.meta.env.BASE_URL}images/cat-scratching-post.jpg`,
   },
   {
     id: 'TY3001',
@@ -33,7 +33,7 @@ export const products = [
     reviewCount: 234,
     colors: ['#FF6347', '#4169E1'],
     category: 'toys',
-    image: '/images/ball-launcher.jpg',
+    image: `${import.meta.env.BASE_URL}images/ball-launcher.jpg`,
   },
   {
     id: 'AP4001',
@@ -45,7 +45,7 @@ export const products = [
     reviewCount: 78,
     colors: ['#FF1493', '#1E90FF', '#32CD32'],
     category: 'apparel',
-    image: '/images/pupfer-jacket.jpg',
+    image: `${import.meta.env.BASE_URL}images/pupfer-jacket.jpg`,
   },
   {
     id: 'FD5001',
@@ -57,7 +57,7 @@ export const products = [
     reviewCount: 312,
     colors: ['#FFD700', '#FF8C00'],
     category: 'food',
-    image: '/images/gourmet-treats.jpg',
+    image: `${import.meta.env.BASE_URL}images/gourmet-treats.jpg`,
   },
   {
     id: 'CT6001',
@@ -69,7 +69,7 @@ export const products = [
     reviewCount: 145,
     colors: ['#FF69B4', '#00CED1'],
     category: 'toys',
-    image: '/images/cat-toy-set.jpg',
+    image: `${import.meta.env.BASE_URL}images/cat-toy-set.jpg`,
   },
 ];
 
@@ -79,21 +79,21 @@ export const featuredProducts = [
     name: 'Premium Dog Food',
     price: 500,
     description: 'Nutritious and delicious meals for your furry friend',
-    image: '/images/Dog_Food.png',
+    image: `${import.meta.env.BASE_URL}images/Dog_Food.png`,
   },
   {
     id: 'featured-2',
     name: 'Cat Toys Bundle',
     price: 1280.50,
     description: 'Keep your kitty entertained for hours',
-    image: '/images/Cat_Toys.png',
+    image: `${import.meta.env.BASE_URL}images/Cat_Toys.png`,
   },
   {
     id: 'featured-3',
     name: 'Cozy Pet Bed',
     price: 999,
     description: 'Comfortable sleeping space for pets of all sizes',
-    image: '/images/Pet_Bed.jpg',
+    image: `${import.meta.env.BASE_URL}images/Pet_Bed.jpg`,
   },
 ];
 
